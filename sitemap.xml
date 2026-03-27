@@ -7,6 +7,18 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://bulkrename.app/blog.html</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bulkrename.app/blog/how-to-batch-rename-files-android.html</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://bulkrename.app/privacy.html</loc>
         <lastmod>2024-01-31</lastmod>
         <changefreq>monthly</changefreq>
