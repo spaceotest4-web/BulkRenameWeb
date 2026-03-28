@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Bulk Rename | File Renaming Tips & Tutorials</title>
+  <meta name="description" content="Tips, tutorials, and guides on batch file renaming, file organization, and productivity on Android. Learn how to rename multiple files efficiently.">
+  <meta name="keywords" content="batch rename files, bulk rename tutorial, file organization Android, rename multiple files guide">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bulkrename.app/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bulk Rename Blog - File Renaming Tips & Tutorials">
+  <meta property="og:description" content="Tips, tutorials, and guides on batch file renaming and file organization on Android.">
+  <meta property="og:url" content="https://bulkrename.app/blog.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Bulk Rename Blog",
+    "description": "Tips, tutorials, and guides on batch file renaming and file organization",
+    "url": "https://bulkrename.app/blog.html",
+    "publisher": {"@type": "Organization", "name": "Bulk Rename"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #5C6BC0;
+      --primary-dark: #3F51B5;
+      --primary-light: #7986CB;
+      --text: #1a1a2e;
+      --text-light: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --gradient: linear-gradient(135deg, #5C6BC0 0%, #3F51B5 100%);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text); line-height: 1.6; background: var(--bg); }
+
+    /* Nav */
+    nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    nav .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 70px; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.5rem; color: var(--primary); text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; background: var(--gradient); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
+    nav ul { display: flex; list-style: none; gap: 32px; }
+    nav a { text-decoration: none; color: var(--text); font-weight: 500; }
+    nav a:hover, nav a.active { color: var(--primary); }
+    .nav-download { background: var(--gradient); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+
+    /* Page Header */
+    .page-header { padding: 120px 0 60px; background: linear-gradient(180deg, #f0f4ff 0%, #fff 100%); text-align: center; }
+    .page-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .page-header p { color: var(--text-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+    /* Blog Grid */
+    .blog-section { padding: 60px 0 100px; }
+    .blog-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 30px; }
+    .blog-card { display: flex; flex-direction: column; background: var(--bg-alt); border-radius: 16px; overflow: hidden; text-decoration: none; color: var(--text); transition: all 0.3s; }
+    .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+    .blog-card-icon { height: 160px; background: var(--gradient); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+    .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .blog-card-tags { display: flex; gap: 8px; margin-bottom: 8px; }
+    .tag { background: #E8EAF6; color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+    .blog-card-date { font-size: 0.85rem; color: var(--text-light); margin-bottom: 8px; }
+    .blog-card h3 { font-size: 1.2rem; margin-bottom: 8px; line-height: 1.4; }
+    .blog-card p { font-size: 0.95rem; color: var(--text-light); flex: 1; }
+    .read-more { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-top: 12px; }
+
+    /* Footer */
+    footer { background: var(--text); color: white; padding: 40px 0; text-align: center; }
+    footer .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    footer a { color: #94a3b8; text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+    .footer-copy { color: #64748b; font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .page-header h1 { font-size: 1.75rem; }
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">📝</div> Bulk Rename</a>
+      <ul>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#download" class="nav-download">Download Free</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Blog</h1>
+    <p>Tips, tutorials, and guides on batch file renaming and file organization on Android.</p>
+  </section>
+
+  <section class="blog-section">
+    <div class="blog-container">
+      <div class="blog-grid" id="blogGrid">
+
+        <a href="blog/rename-multiple-photos-android.html" class="blog-card">
+          <div class="blog-card-icon">🖼️</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Photos</span><span class="tag">Tutorial</span></div>
+            <div class="blog-card-date">Mar 28, 2026</div>
+            <h3>How to Rename Multiple Photos on Android at Once (2026 Guide)</h3>
+            <p>Stop renaming photos one by one. Batch rename camera photos with dates, serial numbers, or custom text in seconds.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="blog/rename-files-for-social-media-upload.html" class="blog-card">
+          <div class="blog-card-icon">📱</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Social Media</span><span class="tag">SEO</span></div>
+            <div class="blog-card-date">Mar 27, 2026</div>
+            <h3>How to Rename Files for Social Media Uploads on Android</h3>
+            <p>Proper file names boost SEO on YouTube, Pinterest, and Google Images. Platform-by-platform naming guide.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="blog/organize-photos-android-guide.html" class="blog-card">
+          <div class="blog-card-icon">📸</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Photos</span><span class="tag">Organization</span></div>
+            <div class="blog-card-date">Mar 27, 2026</div>
+            <h3>How to Organize Photos on Android: The Complete System (2026)</h3>
+            <p>Turn thousands of messy IMG_ photos into an organized collection with folders and batch renaming.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="blog/rename-downloaded-files-android.html" class="blog-card">
+          <div class="blog-card-icon">📥</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Tutorial</span><span class="tag">Downloads</span></div>
+            <div class="blog-card-date">Mar 27, 2026</div>
+            <h3>How to Rename Downloaded Files on Android (Stop the Chaos)</h3>
+            <p>Clean up your messy Downloads folder. Remove (1)(2)(3) duplicates and organize in 10 minutes.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="blog/file-naming-conventions-phone-organization.html" class="blog-card">
+          <div class="blog-card-icon">🏷️</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Organization</span><span class="tag">Productivity</span></div>
+            <div class="blog-card-date">Mar 27, 2026</div>
+            <h3>10 Best File Naming Conventions to Organize Your Phone in 2026</h3>
+            <p>Stop losing files in a mess of IMG_20260327. 10 proven naming systems with real examples.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="blog/how-to-batch-rename-files-android.html" class="blog-card">
+          <div class="blog-card-icon">📂</div>
+          <div class="blog-card-body">
+            <div class="blog-card-tags"><span class="tag">Tutorial</span><span class="tag">Android</span></div>
+            <div class="blog-card-date">Mar 27, 2026</div>
+            <h3>How to Batch Rename Files on Android: Complete Guide (2026)</h3>
+            <p>Step-by-step guide to renaming multiple files at once on your Android phone — 5 methods compared.</p>
+            <span class="read-more">Read More &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Bulk Rename. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
