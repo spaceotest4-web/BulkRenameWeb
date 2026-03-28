@@ -1200,7 +1200,7 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    Stop renaming files one by one. Bulk Rename lets you batch rename hundreds of files instantly on Android. Add prefixes, serial numbers, timestamps, and more — all for free.
+                    Join 145,000+ users who've renamed 2.8M+ files with our powerful batch renaming tool. Add prefixes, serial numbers, timestamps, and more — completely free on Android.
                 </p>
 
                 <div class="hero-cta">
@@ -1223,15 +1223,15 @@
 
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <span class="hero-stat-number">1.2M+</span>
+                        <span class="hero-stat-number" data-target="2800000" data-suffix="M+">0</span>
                         <span class="hero-stat-label">Files Renamed</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="hero-stat-number">50K+</span>
+                        <span class="hero-stat-number" data-target="145000" data-suffix="K+">0</span>
                         <span class="hero-stat-label">Happy Users</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="hero-stat-number">4.9★</span>
+                        <span class="hero-stat-number" data-target="4.8" data-suffix="★">0</span>
                         <span class="hero-stat-label">User Rating</span>
                     </div>
                 </div>
@@ -1437,7 +1437,7 @@
             <div class="download-content">
                 <h2 class="download-title">Ready to Organize Your Files?</h2>
                 <p class="download-subtitle">
-                    Join 50,000+ Android users who've simplified their file management with Bulk Rename. Download now and start renaming files like a pro.
+                    Join 145,000+ Android users who've transformed their file organization with Bulk Rename. Download now and start renaming files like a pro.
                 </p>
 
                 <div class="download-buttons">
@@ -1601,26 +1601,38 @@
         // 📊 Counter animation for hero stats
         const animateCounters = () => {
             const counters = document.querySelectorAll('.hero-stat-number');
+            
             counters.forEach(counter => {
-                const target = counter.innerText.replace(/[^\d.]/g, '');
-                const increment = target / 100;
-                let current = 0;
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const suffix = counter.getAttribute('data-suffix');
+                const duration = 2000; // 2 seconds
+                const startTime = performance.now();
                 
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        if (counter.innerText.includes('M')) {
-                            counter.innerText = (current / 1000000).toFixed(1) + 'M+';
-                        } else if (counter.innerText.includes('K')) {
-                            counter.innerText = (current / 1000).toFixed(0) + 'K+';
-                        } else if (counter.innerText.includes('★')) {
-                            counter.innerText = current.toFixed(1) + '★';
-                        }
+                const updateCounter = (currentTime) => {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    
+                    // Easing function for smooth animation
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    const current = target * easeOut;
+                    
+                    // Format based on suffix
+                    if (suffix === 'M+') {
+                        counter.textContent = (current / 1000000).toFixed(1) + 'M+';
+                    } else if (suffix === 'K+') {
+                        counter.textContent = Math.floor(current / 1000) + 'K+';
+                    } else if (suffix === '★') {
+                        counter.textContent = current.toFixed(1) + '★';
+                    } else {
+                        counter.textContent = Math.floor(current).toLocaleString();
+                    }
+                    
+                    if (progress < 1) {
                         requestAnimationFrame(updateCounter);
                     }
                 };
                 
-                updateCounter();
+                requestAnimationFrame(updateCounter);
             });
         };
 
