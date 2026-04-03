@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Rename PDF Files in Bulk on Android — Organize Documents Fast in 2026</title>
+    <meta name="description" content="Learn how to rename PDF files in bulk on Android. Step-by-step guide to organizing scanned receipts, school notes, work documents, and legal papers with Bulk Rename.">
+    <meta name="keywords" content="rename pdf files android, bulk rename pdf, organize pdf android, batch rename documents, pdf file organization, rename scanned documents android">
+    <meta name="author" content="Bulk Rename Team">
+    <link rel="canonical" href="https://bulkrename.app/blog/rename-pdf-files-bulk-android.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="How to Rename PDF Files in Bulk on Android — Organize Documents Fast in 2026">
+    <meta property="og:description" content="Stop drowning in document(1).pdf chaos. Learn to bulk rename PDFs on Android with smart naming patterns for receipts, notes, contracts, and more.">
+    <meta property="og:image" content="https://bulkrename.app/images/rename-pdf-android.jpg">
+    <meta property="og:url" content="https://bulkrename.app/blog/rename-pdf-files-bulk-android.html">
+    <meta property="og:type" content="article">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Rename PDF Files in Bulk on Android">
+    <meta name="twitter:description" content="Organize your PDF documents on Android with bulk renaming. Complete guide with real examples and naming conventions.">
+    <meta name="twitter:image" content="https://bulkrename.app/images/rename-pdf-android.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='25' cy='25' r='8' fill='%23dc2626'/%3E%3Ccircle cx='75' cy='25' r='8' fill='%23dc2626'/%3E%3Ccircle cx='25' cy='75' r='8' fill='%23dc2626'/%3E%3Cpath d='M40 40 L85 40 Q90 40 90 45 L90 80 Q90 85 85 85 L45 85 Q40 85 40 80 Z' fill='%2316a34a'/%3E%3Cpath d='M35 35 L75 55' stroke='%232563eb' stroke-width='3' marker-end='url(%23arrowhead)'/%3E%3Cdefs%3E%3Cmarker id='arrowhead' markerWidth='10' markerHeight='7' refX='10' refY='3.5' orient='auto'%3E%3Cpolygon points='0 0, 10 3.5, 0 7' fill='%232563eb'/%3E%3C/marker%3E%3C/defs%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" sizes="192x192" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%231e40af'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='192' height='192' rx='32' fill='url(%23grad)'/%3E%3Cg transform='translate(32,32)'%3E%3Ccircle cx='25' cy='25' r='12' fill='%23dc2626'/%3E%3Ccircle cx='105' cy='25' r='12' fill='%23dc2626'/%3E%3Ccircle cx='25' cy='105' r='12' fill='%23dc2626'/%3E%3Cpath d='M60 60 L120 60 Q128 60 128 68 L128 112 Q128 120 120 120 L68 120 Q60 120 60 112 Z' fill='%2316a34a'/%3E%3Cpath d='M50 50 L110 80' stroke='white' stroke-width='4' marker-end='url(%23arrowhead2)'/%3E%3Cdefs%3E%3Cmarker id='arrowhead2' markerWidth='12' markerHeight='8' refX='12' refY='4' orient='auto'%3E%3Cpolygon points='0 0, 12 4, 0 8' fill='white'/%3E%3C/marker%3E%3C/defs%3E%3C/g%3E%3C/svg%3E">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #dc2626;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-left: 4px solid #dc2626;
+            padding-left: 1rem;
+        }
+        
+        h3 {
+            color: #374151;
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        
+        .method-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .method-card:hover {
+            border-color: #dc2626;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.15);
+        }
+        
+        .method-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .method-icon {
+            width: 40px;
+            height: 40px;
+            background: #dc2626;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+        
+        .difficulty-easy { background: #10b981; }
+        .difficulty-medium { background: #f59e0b; }
+        .difficulty-advanced { background: #dc2626; }
+        
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin: 0.8rem 0;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            background: #dc2626;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .naming-patterns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .pattern-card {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #dc2626;
+        }
+        
+        .pattern-title {
+            font-weight: 600;
+            color: #991b1b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pattern-example {
+            font-family: 'Courier New', monospace;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .warning-box {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .warning-title {
+            color: #dc2626;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .warning-title::before {
+            content: "⚠️";
+            margin-right: 0.5rem;
+        }
+        
+        .tip-box {
+            background: #f0fdf4;
+            border: 2px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .tip-title {
+            color: #059669;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tip-title::before {
+            content: "💡";
+            margin-right: 0.5rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .comparison-table th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f9fafb;
+        }
+        
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 3rem 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #dc2626;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .breadcrumb {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .breadcrumb a {
+            color: #dc2626;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .before-col, .after-col {
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .before-col {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+        }
+
+        .after-col {
+            background: #f0fdf4;
+            border: 2px solid #bbf7d0;
+        }
+
+        .before-col .label, .after-col .label {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .before-col .label { color: #dc2626; }
+        .after-col .label { color: #059669; }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .naming-patterns {
+                grid-template-columns: 1fr;
+            }
+            
+            .method-card {
+                padding: 1rem;
+            }
+
+            .before-after {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Rename PDF Files in Bulk on Android — Organize Documents Fast in 2026",
+        "description": "Learn how to rename PDF files in bulk on Android. Step-by-step guide to organizing scanned receipts, school notes, work documents, and legal papers with Bulk Rename.",
+        "image": "https://bulkrename.app/images/rename-pdf-android.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Bulk Rename Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bulk Rename",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://bulkrename.app/images/logo.png"
+            }
+        },
+        "datePublished": "2026-04-03",
+        "dateModified": "2026-04-03",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://bulkrename.app/blog/rename-pdf-files-bulk-android.html"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Rename PDF Files in Bulk on Android",
+        "description": "Complete guide to batch renaming and organizing PDF documents on Android using Bulk Rename",
+        "image": "https://bulkrename.app/images/rename-pdf-android.jpg",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "supply": [
+            {
+                "@type": "HowToSupply",
+                "name": "Android device"
+            },
+            {
+                "@type": "HowToSupply",
+                "name": "PDF files to organize"
+            }
+        ],
+        "tool": [
+            {
+                "@type": "HowToTool",
+                "name": "Bulk Rename app for Android"
+            }
+        ],
+        "totalTime": "PT10M",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Install Bulk Rename",
+                "text": "Download the free Bulk Rename app from the Google Play Store on your Android device"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Select your PDF files",
+                "text": "Open Bulk Rename and navigate to your PDF folder. Select the files you want to rename — you can pick individual files or select all at once"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Choose a renaming method",
+                "text": "Pick from Add Prefix, Add Suffix, Find & Replace, Serial Numbers, or Date Stamps depending on your naming needs"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Configure your naming pattern",
+                "text": "Set your preferred naming pattern — for example, add a date prefix like 2026-04_ or replace generic text like document with a descriptive project name"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Preview and apply",
+                "text": "Review the before-and-after preview to confirm everything looks right, then tap Apply to rename all selected PDFs instantly"
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can I rename PDF files in bulk on Android without a computer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! The Bulk Rename app for Android lets you rename hundreds of PDF files at once directly on your phone. No computer, no cable transfer needed. Just select your PDFs, choose a naming pattern, and apply."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will renaming a PDF file corrupt it or change its contents?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Renaming a file only changes the filename, not the file contents. Your PDF text, images, bookmarks, and formatting remain completely untouched. Just make sure you keep the .pdf extension."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the best naming convention for PDF documents?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The most effective convention is YYYY-MM-DD_Category_Description.pdf — for example, 2026-04-03_Receipt_Amazon_Headphones.pdf. Date-first ensures chronological sorting, category helps with searching, and description gives context at a glance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I rename scanned documents that have random names?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Use the Find & Replace feature in Bulk Rename to strip scanner prefixes like 'Scan_' or 'CamScanner_', then add a meaningful prefix with the date or category. You can also use serial numbers to batch-number a set of scanned pages."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I add dates to PDF filenames automatically?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Bulk Rename's date stamp feature can add the current date or the file's original creation date as a prefix or suffix. This is perfect for organizing invoices, receipts, and time-sensitive documents."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many PDF files can I rename at once with Bulk Rename?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bulk Rename can handle hundreds of files in a single batch operation. There's no practical limit for typical document collections. Whether you have 10 PDFs or 500, select them all and rename in one tap."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://bulkrename.app"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://bulkrename.app/blog.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Rename PDF Files in Bulk on Android",
+                "item": "https://bulkrename.app/blog/rename-pdf-files-bulk-android.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Home</a> → 
+            <a href="https://bulkrename.app/blog.html">Blog</a> → 
+            Rename PDF Files in Bulk on Android
+        </nav>
+        
+        <header class="header">
+            <h1>How to Rename PDF Files in Bulk on Android</h1>
+            <p class="subtitle">Organize Documents Fast — Receipts, Notes, Contracts & More (2026 Guide)</p>
+        </header>
+        
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number">73%</div>
+                <div class="stat-label">Of PDFs Have Useless Names</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">2min</div>
+                <div class="stat-label">To Rename 100 Files</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Free on Android</div>
+            </div>
+        </div>
+        
+        <article class="content-section">
+            <h2>Why Your PDF Files Are a Mess</h2>
+            <p>Open your Downloads folder right now. What do you see? If it's anything like most Android users, you're staring at a graveyard of meaningless filenames:</p>
+            
+            <div class="before-after" style="margin: 1.5rem 0;">
+                <div class="before-col">
+                    <span class="label">❌ Your PDFs right now</span>
+                    document.pdf<br>
+                    document(1).pdf<br>
+                    document(2).pdf<br>
+                    Scan_20260401_143022.pdf<br>
+                    CamScanner_04-01-2026.pdf<br>
+                    IMG_20260330.pdf<br>
+                    download.pdf<br>
+                    download(3).pdf<br>
+                    receipt.pdf<br>
+                    Untitled.pdf
+                </div>
+                <div class="after-col">
+                    <span class="label">✅ After Bulk Rename</span>
+                    2026-04-01_Receipt_Amazon.pdf<br>
+                    2026-04-01_Receipt_Grocery.pdf<br>
+                    2026-04-01_Receipt_Electric.pdf<br>
+                    2026-04-01_Notes_Physics_Ch5.pdf<br>
+                    2026-03-30_Contract_Lease.pdf<br>
+                    2026-03-30_Invoice_Client_A.pdf<br>
+                    2026-03-28_Tax_W2_Form.pdf<br>
+                    2026-03-28_Tax_1099_Freelance.pdf<br>
+                    2026-03-25_Medical_LabReport.pdf<br>
+                    2026-03-20_Resume_v3.pdf
+                </div>
+            </div>
+            
+            <p>This happens because every app on your phone dumps PDFs with garbage names. Browsers save everything as "document.pdf". Scanner apps spit out timestamp soup. Email attachments keep whatever random name the sender chose. And Android helpfully adds (1), (2), (3) when filenames collide.</p>
+            
+            <p>The result? You can never find anything. That receipt you need for a return? Buried somewhere in 47 files named "document". The contract your landlord sent? Could be any of the 12 unnamed PDFs from last month.</p>
+            
+            <div class="tip-box">
+                <div class="tip-title">The Real Cost of Messy PDFs</div>
+                <p>The average person spends <strong>18 minutes per day</strong> searching for documents. That's over 100 hours per year wasted on files you already have but can't find. A 10-minute renaming session today saves you weeks of frustration.</p>
+            </div>
+        </article>
+        
+        <article class="content-section">
+            <h2>Common PDF Naming Patterns You Need</h2>
+            <p>Before you start renaming, decide on a system. The best naming convention depends on how you think about your documents:</p>
+            
+            <div class="naming-patterns">
+                <div class="pattern-card">
+                    <div class="pattern-title">📅 By Date (Most Popular)</div>
+                    <div class="pattern-example">2026-04-03_Receipt_Amazon.pdf<br>2026-03-15_Invoice_March.pdf</div>
+                </div>
+                <div class="pattern-card">
+                    <div class="pattern-title">📁 By Subject/Category</div>
+                    <div class="pattern-example">Tax_W2_2025.pdf<br>Medical_LabResults_April.pdf</div>
+                </div>
+                <div class="pattern-card">
+                    <div class="pattern-title">🏗️ By Project</div>
+                    <div class="pattern-example">ProjectAlpha_Proposal_v2.pdf<br>ProjectAlpha_Budget_Final.pdf</div>
+                </div>
+                <div class="pattern-card">
+                    <div class="pattern-title">👤 By Client/Person</div>
+                    <div class="pattern-example">ClientSmith_Contract_2026.pdf<br>ClientSmith_Invoice_April.pdf</div>
+                </div>
+                <div class="pattern-card">
+                    <div class="pattern-title">🔢 Sequential Numbering</div>
+                    <div class="pattern-example">Physics_Notes_001.pdf<br>Physics_Notes_002.pdf</div>
+                </div>
+                <div class="pattern-card">
+                    <div class="pattern-title">🏷️ Hybrid (Best Practice)</div>
+                    <div class="pattern-example">2026-04_Tax_W2_Form.pdf<br>2026-03_Client_Smith_Invoice_03.pdf</div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="content-section">
+            <h2>Step-by-Step: Bulk Rename PDFs with Bulk Rename App</h2>
+            <p>The <a href="https://bulkrename.app" style="color: #dc2626; font-weight: 600;">Bulk Rename</a> app for Android makes renaming hundreds of PDFs effortless. Here's how to use each feature:</p>
+            
+            <div class="method-card">
+                <div class="method-header">
+                    <div class="method-icon difficulty-easy">1</div>
+                    <div>
+                        <h3>Add Prefix — Categorize Instantly</h3>
+                        <p>Add text to the beginning of every filename</p>
+                    </div>
+                </div>
+                
+                <p><strong>Use case:</strong> You have 20 receipts all named "document(X).pdf" and want to label them all as receipts.</p>
+                
+                <ol class="steps">
+                    <li>Open <strong>Bulk Rename</strong> and tap <strong>Select Files</strong></li>
+                    <li>Navigate to your PDF folder and select the receipt files</li>
+                    <li>Choose the <strong>Add Prefix</strong> option</li>
+                    <li>Type <strong>Receipt_</strong> as the prefix text</li>
+                    <li>Preview the results and tap <strong>Apply</strong></li>
+                </ol>
+                
+                <div class="before-after">
+                    <div class="before-col">
+                        <span class="label">Before</span>
+                        document.pdf<br>document(1).pdf<br>document(2).pdf
+                    </div>
+                    <div class="after-col">
+                        <span class="label">After</span>
+                        Receipt_document.pdf<br>Receipt_document(1).pdf<br>Receipt_document(2).pdf
+                    </div>
+                </div>
+            </div>
+            
+            <div class="method-card">
+                <div class="method-header">
+                    <div class="method-icon difficulty-easy">2</div>
+                    <div>
+                        <h3>Add Suffix — Tag with Dates or Versions</h3>
+                        <p>Append text to the end of every filename</p>
+                    </div>
+                </div>
+                
+                <p><strong>Use case:</strong> You want to add the month and year to a batch of invoices.</p>
+                
+                <ol class="steps">
+                    <li>Select your invoice PDFs in Bulk Rename</li>
+                    <li>Choose <strong>Add Suffix</strong></li>
+                    <li>Type <strong>_April2026</strong> as the suffix</li>
+                    <li>Preview and tap <strong>Apply</strong></li>
+                </ol>
+                
+                <div class="before-after">
+                    <div class="before-col">
+                        <span class="label">Before</span>
+                        Invoice_ClientA.pdf<br>Invoice_ClientB.pdf
+                    </div>
+                    <div class="after-col">
+                        <span class="label">After</span>
+                        Invoice_ClientA_April2026.pdf<br>Invoice_ClientB_April2026.pdf
+                    </div>
+                </div>
+            </div>
+            
+            <div class="method-card">
+                <div class="method-header">
+                    <div class="method-icon difficulty-medium">3</div>
+                    <div>
+                        <h3>Find & Replace — Clean Up Scanner Junk</h3>
+                        <p>Replace any text in filenames across all selected files</p>
+                    </div>
+                </div>
+                
+                <p><strong>Use case:</strong> Your scanner app named everything "CamScanner_" and you want clean names.</p>
+                
+                <ol class="steps">
+                    <li>Select all your scanned PDFs</li>
+                    <li>Choose <strong>Find & Replace</strong></li>
+                    <li>In <strong>Find</strong>, type <strong>CamScanner_</strong></li>
+                    <li>In <strong>Replace</strong>, type <strong>Scan_</strong> (or leave empty to remove it entirely)</li>
+                    <li>Preview and tap <strong>Apply</strong></li>
+                </ol>
+                
+                <div class="before-after">
+                    <div class="before-col">
+                        <span class="label">Before</span>
+                        CamScanner_04-01-2026_14.30.pdf<br>CamScanner_04-02-2026_09.15.pdf
+                    </div>
+                    <div class="after-col">
+                        <span class="label">After</span>
+                        Scan_04-01-2026_14.30.pdf<br>Scan_04-02-2026_09.15.pdf
+                    </div>
+                </div>
+            </div>
+            
+            <div class="method-card">
+                <div class="method-header">
+                    <div class="method-icon difficulty-medium">4</div>
+                    <div>
+                        <h3>Serial Numbers — Number Your Pages</h3>
+                        <p>Add sequential numbers to a set of files</p>
+                    </div>
+                </div>
+                
+                <p><strong>Use case:</strong> You scanned a 30-page textbook chapter and need the pages numbered in order.</p>
+                
+                <ol class="steps">
+                    <li>Select the scanned chapter PDFs in order</li>
+                    <li>Choose <strong>Serial Numbers</strong></li>
+                    <li>Set the base name to <strong>Physics_Ch5_Page_</strong></li>
+                    <li>Set starting number to <strong>1</strong> with zero-padding (001, 002...)</li>
+                    <li>Preview the sequential names and tap <strong>Apply</strong></li>
+                </ol>
+                
+                <div class="before-after">
+                    <div class="before-col">
+                        <span class="label">Before</span>
+                        IMG_20260330.pdf<br>IMG_20260331.pdf<br>IMG_20260332.pdf
+                    </div>
+                    <div class="after-col">
+                        <span class="label">After</span>
+                        Physics_Ch5_Page_001.pdf<br>Physics_Ch5_Page_002.pdf<br>Physics_Ch5_Page_003.pdf
+                    </div>
+                </div>
+            </div>
+            
+            <div class="method-card">
+                <div class="method-header">
+                    <div class="method-icon difficulty-advanced">5</div>
+                    <div>
+                        <h3>Date Stamps — Auto-Add Dates</h3>
+                        <p>Automatically insert dates into filenames</p>
+                    </div>
+                </div>
+                
+                <p><strong>Use case:</strong> You want every monthly report to have its date baked into the filename.</p>
+                
+                <ol class="steps">
+                    <li>Select your report PDFs</li>
+                    <li>Choose <strong>Date Stamp</strong></li>
+                    <li>Pick your date format: <strong>YYYY-MM-DD</strong> (recommended for sorting)</li>
+                    <li>Choose whether to add as prefix or suffix</li>
+                    <li>Preview and tap <strong>Apply</strong></li>
+                </ol>
+                
+                <div class="before-after">
+                    <div class="before-col">
+                        <span class="label">Before</span>
+                        Monthly_Report.pdf<br>Expense_Summary.pdf
+                    </div>
+                    <div class="after-col">
+                        <span class="label">After</span>
+                        2026-04-03_Monthly_Report.pdf<br>2026-04-03_Expense_Summary.pdf
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="content-section">
+            <h2>Real-World Examples: PDFs You Actually Have</h2>
+            
+            <h3>🧾 Scanned Receipts</h3>
+            <p>You photograph or scan receipts for returns, warranties, and tax deductions. Scanner apps create unhelpful names.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Before (Scanner Output)</th>
+                        <th>After (Bulk Rename)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CamScanner_04-01-2026.pdf</td><td>2026-04-01_Receipt_BestBuy_TV.pdf</td></tr>
+                    <tr><td>Scan_20260328.pdf</td><td>2026-03-28_Receipt_IKEA_Desk.pdf</td></tr>
+                    <tr><td>document(4).pdf</td><td>2026-03-25_Receipt_Amazon_Charger.pdf</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Method:</strong> Use Find & Replace to remove scanner prefixes, then Add Prefix with dates and "Receipt_".</p>
+            
+            <h3>📚 School & College Notes</h3>
+            <p>Downloaded lecture slides, scanned handwritten notes, and assignment PDFs pile up fast during a semester.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>lecture_slides(1).pdf</td><td>Physics_101_Lecture_01_Mechanics.pdf</td></tr>
+                    <tr><td>lecture_slides(2).pdf</td><td>Physics_101_Lecture_02_Thermodynamics.pdf</td></tr>
+                    <tr><td>notes_ch3.pdf</td><td>Physics_101_Notes_Ch03_Waves.pdf</td></tr>
+                    <tr><td>assignment.pdf</td><td>Physics_101_HW_03_DueApr10.pdf</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Method:</strong> Use Serial Numbers with a base name like "Physics_101_Lecture_" for lecture slides. Use Find & Replace for notes.</p>
+            
+            <h3>💼 Work Documents</h3>
+            <p>Invoices, proposals, reports, and contracts from clients and colleagues — all named generically.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>proposal_final.pdf</td><td>2026-04_Proposal_WebRedesign_ClientSmith.pdf</td></tr>
+                    <tr><td>invoice.pdf</td><td>2026-04_Invoice_0042_ClientSmith.pdf</td></tr>
+                    <tr><td>report_v3_FINAL_v2.pdf</td><td>2026-Q1_Report_Sales_Final.pdf</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Method:</strong> Combine Date Stamps with Find & Replace. Replace "final_v2" clutter with clean version names.</p>
+            
+            <h3>⚖️ Legal Papers</h3>
+            <p>Lease agreements, tax forms, insurance documents, and government paperwork need to be findable years later.</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>document.pdf</td><td>Legal_Lease_123MainSt_2026-2027.pdf</td></tr>
+                    <tr><td>download(1).pdf</td><td>Legal_Insurance_Auto_StateFarm_2026.pdf</td></tr>
+                    <tr><td>tax_form.pdf</td><td>Tax_2025_W2_EmployerName.pdf</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Method:</strong> Use Add Prefix with category ("Legal_", "Tax_") and then Add Suffix with the year or date range.</p>
+        </article>
+        
+        <article class="content-section">
+            <h2>Best Naming Conventions for PDFs</h2>
+            <p>PDFs are different from photos or music — they're documents you may need to find years from now. Your naming system must be future-proof.</p>
+            
+            <h3>✅ The Golden Rules</h3>
+            <ul>
+                <li><strong>Date first for sorting:</strong> Start with YYYY-MM-DD or YYYY-MM so files sort chronologically in any file manager</li>
+                <li><strong>Category second for scanning:</strong> Add a type like Receipt, Invoice, Contract, Notes so you can visually scan a folder</li>
+                <li><strong>Description last for context:</strong> Include the what — store name, subject, client, etc.</li>
+                <li><strong>Use underscores, not spaces:</strong> <code>Receipt_Amazon.pdf</code> not <code>Receipt Amazon.pdf</code> — avoids issues across devices</li>
+                <li><strong>Keep the .pdf extension:</strong> Always. Never rename the extension or Android won't know how to open the file</li>
+                <li><strong>Use CamelCase or underscores:</strong> <code>MonthlyReport</code> or <code>Monthly_Report</code> — pick one and be consistent</li>
+            </ul>
+            
+            <div class="warning-box">
+                <div class="warning-title">Avoid These PDF Naming Mistakes</div>
+                <ul>
+                    <li><strong>Never use "final" in filenames</strong> — you'll end up with "final_v2_REAL_final.pdf". Use version numbers instead (v1, v2, v3)</li>
+                    <li><strong>Don't use special characters</strong> — avoid #, &, @, !, ?, * in filenames. They break on some systems</li>
+                    <li><strong>Don't make names too long</strong> — stay under 60 characters. Some apps truncate long names</li>
+                    <li><strong>Don't mix date formats</strong> — pick YYYY-MM-DD and stick with it. Don't alternate with MM-DD-YYYY</li>
+                </ul>
+            </div>
+            
+            <h3>📐 Recommended Templates by Document Type</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Document Type</th>
+                        <th>Naming Template</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Receipts</td><td>YYYY-MM-DD_Receipt_Store_Item</td><td>2026-04-03_Receipt_Amazon_Monitor.pdf</td></tr>
+                    <tr><td>Invoices</td><td>YYYY-MM_Invoice_Number_Client</td><td>2026-04_Invoice_0042_Smith.pdf</td></tr>
+                    <tr><td>Contracts</td><td>Type_Description_YYYY</td><td>Legal_Lease_MainSt_2026.pdf</td></tr>
+                    <tr><td>School Notes</td><td>Course_Type_Number_Topic</td><td>CS201_Lecture_05_Algorithms.pdf</td></tr>
+                    <tr><td>Tax Documents</td><td>Tax_Year_FormType_Source</td><td>Tax_2025_W2_Google.pdf</td></tr>
+                    <tr><td>Medical</td><td>Medical_Type_Provider_Date</td><td>Medical_LabReport_DrPatel_2026-03.pdf</td></tr>
+                </tbody>
+            </table>
+        </article>
+        
+        <article class="content-section">
+            <h2>Organize PDF Folders Alongside Renaming</h2>
+            <p>Renaming is only half the battle. Pair it with a smart folder structure and you'll never lose a document again.</p>
+            
+            <h3>📁 Recommended Folder Structure</h3>
+            <div style="background: #f8fafc; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.9rem; line-height: 2;">
+                📂 Documents/<br>
+                &nbsp;&nbsp;├── 📂 Receipts/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 2026/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📂 2025/<br>
+                &nbsp;&nbsp;├── 📂 Work/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 Invoices/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 Contracts/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📂 Reports/<br>
+                &nbsp;&nbsp;├── 📂 School/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 Physics_101/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📂 CS_201/<br>
+                &nbsp;&nbsp;├── 📂 Legal/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 Tax/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── 📂 Insurance/<br>
+                &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📂 Housing/<br>
+                &nbsp;&nbsp;└── 📂 Medical/
+            </div>
+            
+            <div class="tip-box">
+                <div class="tip-title">Power Move: Rename Then Sort</div>
+                <p>Rename your PDFs first with category prefixes using Bulk Rename, then move them into folders. When filenames already contain the category (e.g., "Receipt_Amazon..."), sorting into folders becomes a 30-second drag-and-drop task.</p>
+            </div>
+            
+            <h3>🔄 Monthly PDF Maintenance Routine</h3>
+            <ol>
+                <li><strong>Week 1:</strong> Check Downloads folder for new PDFs. Rename anything unnamed</li>
+                <li><strong>Week 2:</strong> Move renamed PDFs from Downloads into proper category folders</li>
+                <li><strong>Week 3:</strong> Scan for duplicates — delete any "document(1).pdf" copies</li>
+                <li><strong>Week 4:</strong> Back up your organized Documents folder to Google Drive or cloud storage</li>
+            </ol>
+        </article>
+        
+        <div class="cta-section">
+            <h2>Stop Losing Documents in PDF Chaos</h2>
+            <p>Download Bulk Rename free on Android and organize your entire PDF collection in minutes. No sign-up, no ads, no limits.</p>
+            <a href="../index.html" class="cta-button">Download Bulk Rename Free →</a>
+            <p style="margin-top: 1rem; opacity: 0.9;">✨ 100% Free • ⚡ Works Offline • 🔒 Files Never Leave Your Phone</p>
+        </div>
+        
+        <article class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>Can I rename PDF files in bulk on Android without a computer?</h3>
+            <p>Yes! The <strong>Bulk Rename</strong> app for Android lets you rename hundreds of PDF files at once directly on your phone. No computer, no cable transfer needed. Just select your PDFs, choose a naming pattern, and apply. Download it free from <a href="https://bulkrename.app" style="color: #dc2626;">bulkrename.app</a>.</p>
+            
+            <h3>Will renaming a PDF file corrupt it or change its contents?</h3>
+            <p>No. Renaming a file only changes the filename, not the file contents. Your PDF text, images, bookmarks, and formatting remain completely untouched. Just make sure you keep the <strong>.pdf</strong> extension — Bulk Rename preserves extensions automatically so you don't have to worry about this.</p>
+            
+            <h3>What's the best naming convention for PDF documents?</h3>
+            <p>The most effective convention is <strong>YYYY-MM-DD_Category_Description.pdf</strong> — for example, "2026-04-03_Receipt_Amazon_Headphones.pdf". Date-first ensures chronological sorting, the category helps with visual scanning, and the description gives you context at a glance.</p>
+            
+            <h3>How do I rename scanned documents that have random names?</h3>
+            <p>Use the <strong>Find & Replace</strong> feature in Bulk Rename to strip scanner prefixes like "Scan_" or "CamScanner_", then add a meaningful prefix with the date or category. You can chain multiple operations — first clean the junk, then add your naming pattern.</p>
+            
+            <h3>Can I add dates to PDF filenames automatically?</h3>
+            <p>Yes. Bulk Rename's <strong>Date Stamp</strong> feature can add the current date or the file's original creation date as a prefix or suffix. This is perfect for organizing invoices, receipts, and any time-sensitive documents without manually typing dates for each file.</p>
+            
+            <h3>How many PDF files can I rename at once with Bulk Rename?</h3>
+            <p>Bulk Rename can handle hundreds of files in a single batch operation. There's no practical limit for typical document collections. Whether you have 10 PDFs or 500, select them all and rename in one tap.</p>
+        </article>
+        
+        <article class="content-section">
+            <h2>Related Guides</h2>
+            <p>Master complete Android file organization with these guides:</p>
+            <ul>
+                <li><a href="rename-screenshots-android-guide.html">📱 How to Rename Screenshots on Android</a></li>
+                <li><a href="rename-work-files-android-business.html">💼 How to Rename Work & Business Files on Android</a></li>
+                <li><a href="clean-up-android-downloads-folder.html">🗑️ Clean Up Your Android Downloads Folder</a></li>
+                <li><a href="rename-downloaded-files-android.html">📥 Clean Up Your Downloads Folder Chaos</a></li>
+                <li><a href="file-naming-conventions-phone-organization.html">🏷️ 10 Best File Naming Conventions for 2026</a></li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
