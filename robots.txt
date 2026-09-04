@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bulkrename.app/sitemap.xml
+Sitemap: https://bulk-rename-web.vercel.app/sitemap.xml
